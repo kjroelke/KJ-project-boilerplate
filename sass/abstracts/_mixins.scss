@@ -1,3 +1,15 @@
+@use './variables';
+///////////////////
+// Gradients /////
+/////////////////
+
+@mixin linearGradientDarken($direction: 135deg) {
+	background-image: linear-gradient(
+		$direction,
+		transparent 30%,
+		rgba(black, 0.3)
+	);
+}
 @mixin displayFlex(
 	$direction: row,
 	$main: flex-start,
